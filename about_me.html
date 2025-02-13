@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- CSS -->
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+}
+
+html {
+    overflow-x: hidden  ;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color)
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    font-weight: 600;
+    border-bottom-style: inset;
+    border-color: var(--main-color);
+}
+
+.menu a {
+    font-size: large;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-left: 2.0rem;
+    transition: .3s;
+}
+
+.menu a:hover, .menu a.active {
+    color: var(--main-color);
+}
+
+.about_sec {
+    text-align: left;
+    padding: 10%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.about_sec img {
+    display: block;
+    margin: 3%;
+}
+
+.info_sec {
+    margin: 220px;
+    margin-left: 5%;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer {
+    text-align: center;
+    background-color: var(--bg-color);
+    padding: 30px;
+    border-top-style: inset;
+    border-color: var(--main-color);
+    font-weight: bold;
+    font-size: large;
+}
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Web Page</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Jericho Jhonas R. Arada</h1></a>
+
+        <nav class="menu">
+            <a href="" class="active">About ME</a>
+            <a href="">Subject Taken</a>
+            <a href="">Enrolled</a>
+            <a href="">Contact Me</a>
+            <a href="">My Favorites</a>
+        </nav>
+    </header> 
+
+<div class="container">
+    <div class="about_sec">
+            <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">About ME</h2>
+                <img src="images/picture.jpg" alt="My picture" width="250"  height="300">
+    </div>
+
+    <div class="info_sec">
+        <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Personal Information</h2>
+        <p>Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Jericho Jhonas R. Arada</p>
+        <p>Age &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 26 years old</p>
+        <p>Course & year &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: BSIT-2</p>
+        <p>Address &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Pereyra Village, Maningcol, Ozamiz City</p>
+        <p>Birthday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: October 1, 1998</p>
+        <p>Motto &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : "Que Sera Sera"</p>
+    </div>
+</div>
+
+<div class="footer">© 2024 - 2025 ITP4 | All Right Reserved</div>
+</body>
+</html>

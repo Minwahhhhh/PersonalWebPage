@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- CSS -->
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+}
+
+html {
+    overflow-x: hidden  ;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color)
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    font-weight: 600;
+    border-bottom-style: inset;
+    border-color: var(--main-color);
+}
+
+.menu a {
+    font-size: large;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-left: 2.0rem;
+    transition: .3s;
+}
+
+.menu a:hover, .menu a.active {
+    color: var(--main-color);
+}
+
+.footer {
+    position: relative;
+    bottom: 20px;
+    text-align: center;
+    background-color: var(--bg-color);
+    padding: 30px;
+    border-top-style: inset;
+    border-color: var(--main-color);
+    font-weight: bold;
+    font-size: large;
+}
+
+.main {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+table {
+    position: relative;
+    top: -50px;
+    border-collapse: collapse;
+    width: 75%;
+    margin: 100px;
+}
+
+.main {
+    margin: 150px;
+    text-align: left;
+    padding-left: 100px;
+}
+
+td, th {
+  border: 1px solid var(--text-color);
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: var(--main-color);
+}
+
+.pagination a {
+  position: relative;
+  top: -150px;
+  color: var(--text-color);
+  display: inline-block;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: var(--main-color);
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination a:hover:not(.active) {background-color: var(--main-color);} 
+
+</style>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Web Page</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <h1>Jericho Jhonas R. Arada</h1>
+
+            <nav class="menu">
+                <a href="main_page.html" class="active">About ME</a>
+                <a href="subj_taken.html">Subject Taken</a>
+                <a href="subj_enrolled.html">Enrolled</a>
+                <a href="contact_me.html">Contact Me</a>
+                <a href="favorites.html">My Favorites</a>
+                <a href="gallery.html">Gallery</a>
+            </nav>
+        </header> 
+
+        <div class="main">
+            <h1>Subject Taken</h1>
+            <h2>First year - 2nd semester</h2>
+
+            <table>
+                <tr>
+                  <th>Subject Name</th>
+                  <th>Description</th>
+                  <th>Units</th>
+                </tr>
+                <tr>
+                  <td>CSIT 3</td>
+                  <td>INTERMEDIATE PROGRAMMING / COMPUTER PROGRAMMING 2</td>
+                  <td>3.0</td>
+                </tr>
+                <tr>
+                  <td>ITP 1</td>
+                  <td>IT FUNDAMENTALS</td>
+                  <td>3.0</td>
+                </tr>
+                <tr>
+                  <td>ITP 2</td>
+                  <td>DISCRETE MATHEMATICS</td>
+                  <td>3.0</td>
+                </tr>
+                <tr>
+                  <td>MATH 1</td>
+                   <td style="font-size: small;">MATHEMATICS IN THE MODERN WORLD/MATEMATIKA SA MAKABAGONG DAIGDIG</td>
+                  <td>3.0</td>
+                </tr>
+                <tr>
+                  <td>NSTP 12L</td>
+                  <td>NSTP 2-LITERACY TRAINING SERVICE II</td>
+                  <td>3.0</td>
+                </tr>
+                <tr>
+                  <td>PE 2</td>
+                  <td>PATH FIT 2: FITNESS TRAINING</td>
+                  <td>2.0</td>
+                </tr>
+                <tr>
+                  <td>EP 1S</td>
+                  <td>ENGLISH PROFICIENCY - START I</td>
+                  <td>3.0</td>
+                </tr>
+              </table>
+        </div>
+
+        <div style="text-align: center;" class="pagination">
+            <a href="subj_taken.html" class="prev">&laquo;</a>
+            <a href="subj_taken.html">1</a>
+            <a class="active" href="#">2</a>
+            <a href="subj_taken3.html">3</a>
+            <a class="next" href="subj_taken3.html">&raquo;</a>
+        </div>
+
+        <div class="footer">© 2024 - 2025 ITP4 | All Right Reserved</div>
+    </body>
+</html>

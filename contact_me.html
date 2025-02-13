@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- CSS -->
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+}
+
+html {
+    overflow-x: hidden  ;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color)
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    font-weight: 600;
+    border-bottom-style: inset;
+    border-color: var(--main-color);
+}
+
+.menu a {
+    font-size: large;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-left: 2.0rem;
+    transition: .3s;
+}
+
+.menu a:hover, .menu a.active {
+    color: var(--main-color);
+}
+
+.footer {
+    position: relative;
+    bottom: 20px;
+    text-align: center;
+    background-color: var(--bg-color);
+    padding: 30px;
+    border-top-style: inset;
+    border-color: var(--main-color);
+    font-weight: bold;
+    font-size: large;
+}
+
+.fa-facebook
+{
+    margin: 200px;
+    position: relative;
+    right: -350px;
+    font-size: 50px;
+    color: var(--main-color);
+}
+
+.fa-facebook:hover {
+    color: var(--text-color);
+}
+
+.fa-envelope {
+    margin: 200px;
+    position: relative;
+    right: 105px;
+    top: 89px;
+    font-size: 50px;
+    color: var(--main-color);
+}
+
+.fa-envelope:hover {
+    color: var(--text-color);
+}
+
+.fa-phone {
+    margin: 200px;
+    position: relative;
+    right: 561px;
+    top: 180px;
+    font-size: 50px;
+    color: var(--main-color);   
+}
+
+.facebook h2 {
+    position: relative;
+    left: 650px;
+    top: -240px;
+}
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Personal Web Page</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Jericho Jhonas R. Arada</h1>
+
+        <nav class="menu">
+            <a href="main_page.html" class="active">About ME</a>
+            <a href="subj_taken.html">Subject Taken</a>
+            <a href="subj_enrolled.html">Enrolled</a>
+            <a href="contact_me.html">Contact Me</a>
+            <a href="favorites.html">My Favorites</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header> 
+
+    <div class="facebook">
+        <a href="https://www.facebook.com/jjnotsocute"> <i class="fa-brands fa-facebook"></i> </a>
+        <a href="mailto:mr.jerichojhonas@gmail.com"> <i class="fa-regular fa-envelope"></i> </a>
+        <i class="fa-solid fa-phone"></i>
+        <h2>&nbsp;&nbsp;:&nbsp;&nbsp;Jericho Ramientos Arada</h2> <br> <br> <br>
+        <h2 style="position: relative; top: -265px;">&nbsp;&nbsp;:&nbsp;&nbsp;mr.jerichojhonas@gmail.com</h2><br> <br> <br>
+        <h2 style="position: relative; top: -280px;">&nbsp;&nbsp;:&nbsp;&nbsp;+639519418579</h2>
+    </div>
+
+
+<div class="footer">© 2024 - 2025 ITP4 | All Right Reserved</div>
+</body>
+</html>
